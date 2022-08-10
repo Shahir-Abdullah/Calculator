@@ -1,25 +1,27 @@
 {
   "format": 1,
   "restore": {
-    "/home/shahir/Projects/Web-Projects/asp_projects/calculator/backend/backend.csproj": {}
+    "C:\\Users\\shahi\\Downloads\\New Chaldal\\ddd\\Calculator\\backend\\backend.csproj": {}
   },
   "projects": {
-    "/home/shahir/Projects/Web-Projects/asp_projects/calculator/backend/backend.csproj": {
+    "C:\\Users\\shahi\\Downloads\\New Chaldal\\ddd\\Calculator\\backend\\backend.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/shahir/Projects/Web-Projects/asp_projects/calculator/backend/backend.csproj",
+        "projectUniqueName": "C:\\Users\\shahi\\Downloads\\New Chaldal\\ddd\\Calculator\\backend\\backend.csproj",
         "projectName": "backend",
-        "projectPath": "/home/shahir/Projects/Web-Projects/asp_projects/calculator/backend/backend.csproj",
-        "packagesPath": "/home/shahir/.nuget/packages/",
-        "outputPath": "/home/shahir/Projects/Web-Projects/asp_projects/calculator/backend/obj/",
+        "projectPath": "C:\\Users\\shahi\\Downloads\\New Chaldal\\ddd\\Calculator\\backend\\backend.csproj",
+        "packagesPath": "C:\\Users\\shahi\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\shahi\\Downloads\\New Chaldal\\ddd\\Calculator\\backend\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/home/shahir/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\shahi\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net6.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -52,6 +54,16 @@
               "target": "Package",
               "version": "[6.0.8, )"
             },
+            "Microsoft.EntityFrameworkCore.Sqlite": {
+              "target": "Package",
+              "version": "[6.0.8, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[6.0.8, )"
+            },
             "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
               "target": "Package",
               "version": "[6.0.8, )"
@@ -79,7 +91,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/6.0.302/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.102\\RuntimeIdentifierGraph.json"
         }
       }
     }

@@ -7,7 +7,9 @@ var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddControllers();
 builder.Services.AddDbContext<CalculationContext>(opt =>
-    opt.UseInMemoryDatabase("CalculationList"));
+    opt.UseSqlite(@"Data Source=C:\Users\shahi\Downloads\New Chaldal\ddd\Calculator\backend\calculationDB.db"));
+    //opt.UseInMemoryDatabase("CalculationList"));
+
 
 
 var app = builder.Build();

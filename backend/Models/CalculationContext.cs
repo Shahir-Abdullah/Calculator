@@ -9,7 +9,8 @@ namespace backend.Models
             : base(options)
         {
         }
-
+        
         public DbSet<Calculation> Calculations { get; set; } = null!;
+        
     }
 }
