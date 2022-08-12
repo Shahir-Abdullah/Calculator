@@ -1,24 +1,25 @@
 <div class="history-container">
-    <div class="btn-group">
-        <button class="btn-sqrt" (click)="getNHistory()">Show History</button>
+    <div class="history-ui">
+        <div class="btn-group">
+            <button class="btn-sqrt" (click)="getNHistory()">Show History</button>
+        </div>
+        <div class="inputs">
+            <input class="input-area" [(ngModel)] = "n" type="number" placeholder="5" />
+        </div>
     </div>
-    <div class="inputs">
-        <input class="input-area" [(ngModel)] = "inputNumber" type="number" placeholder="5" />
-    </div>
-    <div class="logs">
-        <table>
+    
+    <div class="history-logs">
+        <table class="table-scroll small-first-col">
             <thead>
                 <tr>
-                    <th>
-                        Operation
-                    </th>
-                    <th>
-                        Operand
-                    </th>
+                    <th>Id</th>
+                    <th>Operation</th>
+                    <th>Operand</th>
                 </tr>
             </thead>
-            <tbody>
+            <tbody class="body-half-screen">
                 <tr *ngFor="let log of operationhistory">
+                    <td>{{log.Id}}</td>
                     <td>{{log.Name}}</td>
                     <td>{{log.Number}}</td>
                 </tr>

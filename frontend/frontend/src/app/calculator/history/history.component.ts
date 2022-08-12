@@ -20,8 +20,8 @@ export class HistoryComponent{
     )
   }
 
-  getNHistory(n : number){
-    this.calculationService.getNHistory(n).subscribe(
+  getNHistory(){
+    this.calculationService.getNHistory(this.n).subscribe(
       (response:OperationLog[]) => {
         this.operationhistory = response;
       }

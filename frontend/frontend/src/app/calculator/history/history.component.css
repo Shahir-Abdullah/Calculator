@@ -42,7 +42,7 @@ body {
 }
 
 .history-container{
-    display: flex;
+    display: block;
     position: relative;
     width: 500px;
     height: 350px;
@@ -52,12 +52,16 @@ body {
     box-sizing: border-box;
 }
 
-.history-container > .btn-group{
+.history-ui{
+  display: flex;
+}
+
+.history-ui > .btn-group{
     margin-right: 20px;
     width: 50%;
 }
 
-.history-container > .inputs{
+.history-ui > .inputs{
     width: 50%;
     padding-left: 10px;
 }
@@ -153,3 +157,117 @@ h1 {
   top: 0;
   left: 0;
 }
+
+
+.history-logs{
+  margin-top: 40px;
+  margin-right: 30px;
+}
+
+.table-scroll{
+  /*width:100%; */
+  display: block;
+  empty-cells: show;
+  
+  /* Decoration */
+  border-spacing: 0;
+  border: 1px solid;
+}
+
+.table-scroll thead{
+  background-color: #f1f1f1;  
+  position:relative;
+  display: block;
+  width:100%;
+  overflow-y: scroll;
+}
+
+.table-scroll tbody{
+  /* Position */
+  display: block; position:relative;
+  width:100%; overflow-y:scroll;
+  /* Decoration */
+  border-top: 1px solid #1DA1F2;
+}
+
+.table-scroll tr{
+  width: 100%;
+  display:flex;
+}
+
+.table-scroll td,.table-scroll th{
+  flex-basis:100%;
+  flex-grow:2;
+  display: block;
+  padding: 1rem;
+  text-align:center;
+}
+
+/* Other options */
+
+.table-scroll.small-first-col td:first-child,
+.table-scroll.small-first-col th:first-child{
+  flex-basis:20%;
+  flex-grow:1;
+}
+
+.table-scroll tbody tr:nth-child(2n){
+  background-color: #1DA1F2;
+}
+
+.table-scroll{
+  /*width:100%; */
+  display: block;
+  empty-cells: show;
+  
+  /* Decoration */
+  border-spacing: 0;
+  border: 1px solid;
+}
+
+.table-scroll thead{
+  background-color: #f1f1f1;  
+  position:relative;
+  display: block;
+  width:100%;
+  overflow-y: scroll;
+}
+
+.table-scroll tbody{
+  /* Position */
+  display: block; position:relative;
+  width:100%; overflow-y:scroll;
+  /* Decoration */
+  border-top: 1px solid rgb(255, 255, 255);
+}
+
+.table-scroll tr{
+  width: 100%;
+  display:flex;
+}
+
+.table-scroll td,.table-scroll th{
+  flex-basis:100%;
+  flex-grow:2;
+  display: block;
+  padding: 1rem;
+}
+
+.table-scroll th{
+  background-color: #1DA1F2;
+  color: white;
+}
+
+
+.table-scroll tbody tr:nth-child(2n){
+  background-color: #cbcfd1;
+}
+
+
+.body-half-screen{
+  max-height: 30vh;
+}
+
+
+
+
