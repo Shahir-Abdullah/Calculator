@@ -1,0 +1,24 @@
+
+<div class="calculator-container">
+    <div class="inputs">
+        <label>Input</label>
+        <input class="input-area" [(ngModel)] = "inputNumber" type="number" placeholder="25" />
+        <div class="outputs">
+                <label>Output</label>
+                <textarea readonly>{{calculation}}</textarea>
+        </div>
+    </div>
+    <div class="btn-group">
+        <button class="btn-sqrt" (click)="sqrt()">Sqrt</button>
+        <button class="btn-sq" (click)="sq()">Sq</button>
+        <button class="btn-fact" (click)="fact()">Fact</button>
+        <button class="btn-fibbo" (click)="fibbo()">Fibbo</button>
+    </div>
+</div>
+
+
+  
+
+
+  
+  
