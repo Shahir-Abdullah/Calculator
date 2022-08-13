@@ -7,7 +7,7 @@ var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddControllers();
 builder.Services.AddDbContext<CalculationContext>(opt =>
-    opt.UseSqlite(@"Data Source=C:\Users\shahi\Downloads\New Chaldal\ddd\Calculator\backend\calculationDB.db"));
+    opt.UseSqlite(builder.Configuration.GetConnectionString("DefaultConnection")));
 
 
 builder.Services.AddCors(options =>

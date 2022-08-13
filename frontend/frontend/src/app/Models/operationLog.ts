@@ -1,5 +1,5 @@
 export interface OperationLog {
-    Id: number;
-    Number: number;
-    Name: string;
+    id: number;
+    number: number;
+    name: string;
 }

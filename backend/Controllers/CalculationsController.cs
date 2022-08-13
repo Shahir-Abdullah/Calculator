@@ -99,7 +99,7 @@ namespace backend.Controllers
                     return NotFound();
 
             }
-            await PostCalculation(new Calculation() { Name = operationName, Number = number});
+            await PostCalculation(new Calculation() {Number = number, Name = operationName});
             return Ok(operation.calculate(number));
         } 
     }

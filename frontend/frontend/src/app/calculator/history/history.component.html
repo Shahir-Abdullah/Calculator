@@ -18,10 +18,10 @@
                 </tr>
             </thead>
             <tbody class="body-half-screen">
-                <tr *ngFor="let log of operationhistory">
-                    <td>{{log.Id}}</td>
-                    <td>{{log.Name}}</td>
-                    <td>{{log.Number}}</td>
+                <tr *ngFor= "let operation of operationhistory">
+                    <td>{{operation.id}}</td>
+                    <td>{{operation.name}}</td>
+                    <td>{{operation.number}}</td>
                 </tr>
             </tbody>
         </table>

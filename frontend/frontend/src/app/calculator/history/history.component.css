@@ -18,17 +18,7 @@ body {
   font-family: poppins;
 }
 
-.mainbody{
-  display: block;
-  position: relative;
-  width: 500px;
-  height: 800px;
-  border-radius: 20px;
-  padding: 40px;
-  box-sizing: border-box;
-  background: #ecf0f3;
-  box-shadow: 14px 14px 20px #cbced1, -14px -14px 20px white;
-}
+
 
 .calculator-container{
     display: flex;
@@ -164,14 +154,18 @@ h1 {
   margin-right: 30px;
 }
 
+table, thead, tbody, tr{
+  border-radius: 20px;
+}
+
+tbody{
+  box-shadow: inset 6px 6px 6px #cbced1, inset -6px -6px 6px white;
+}
+
 .table-scroll{
   /*width:100%; */
   display: block;
   empty-cells: show;
-  
-  /* Decoration */
-  border-spacing: 0;
-  border: 1px solid;
 }
 
 .table-scroll thead{
@@ -219,10 +213,6 @@ h1 {
   /*width:100%; */
   display: block;
   empty-cells: show;
-  
-  /* Decoration */
-  border-spacing: 0;
-  border: 1px solid;
 }
 
 .table-scroll thead{
@@ -256,6 +246,7 @@ h1 {
 .table-scroll th{
   background-color: #1DA1F2;
   color: white;
+  font-size: 17px;
 }
 
 
@@ -265,7 +256,7 @@ h1 {
 
 
 .body-half-screen{
-  max-height: 30vh;
+  max-height: 25vh;
 }
 
 

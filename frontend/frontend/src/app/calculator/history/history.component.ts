@@ -10,20 +10,24 @@ import { OperationLog } from 'src/app/Models/operationLog';
 export class HistoryComponent{
 
   public n : number;
-  public operationhistory : OperationLog[] = [];
+  public operationhistory: OperationLog[] = [];
   constructor(private calculationService : CalculateService) { 
     this.n = 0;
     this.calculationService.getAllHistory().subscribe(
       (response:OperationLog[]) => {
         this.operationhistory = response;
+        //console.log(this.operationhistory);
       }
     )
   }
 
   getNHistory(){
+    if(this.n == null)this.n = 0;
+    
     this.calculationService.getNHistory(this.n).subscribe(
       (response:OperationLog[]) => {
         this.operationhistory = response;
+        //console.log(this.operationhistory);
       }
     )
   }
