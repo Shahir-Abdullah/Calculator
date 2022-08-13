@@ -18,13 +18,10 @@ export class CalculateService {
   }
 
   getAllHistory() : Observable<OperationLog[]>{
-    
     return this.http.get<OperationLog[]>(this.apiBaseUrl);
   }
 
   getNHistory(n : number) : Observable<OperationLog[]>{
-    //var temp = this.http.get(this.apiBaseUrl + n);
-    //console.log(temp.pipe());
     return this.http.get<OperationLog[]>(this.apiBaseUrl + n);
   }
 }

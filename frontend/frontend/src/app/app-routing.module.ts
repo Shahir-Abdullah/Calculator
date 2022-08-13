@@ -5,7 +5,7 @@ import { MainappComponent } from './calculator/mainapp/mainapp.component';
 
 const routes: Routes = [
   {
-    path: 'calculate',
+    path: '',
     component: MainappComponent,
   }
 ];
