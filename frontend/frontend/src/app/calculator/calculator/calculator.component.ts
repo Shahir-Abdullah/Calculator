@@ -16,32 +16,27 @@ export class CalculatorComponent{
     this.inputNumber = 0;
   }
   
-  sqrt(){
-    this.calculationService.getCalculation("sqrt", this.inputNumber).subscribe((response:number) => {
+  calculate(operation : string){
+    this.calculationService.getCalculation(operation, this.inputNumber).subscribe((response:number) => {
       this.calculation = response;
     }
     );
+  }
+
+  sqrt(){
+    this.calculate("sqrt");
   }
 
   sq(){
-    this.calculationService.getCalculation("sq", this.inputNumber).subscribe((response:number) => {
-      this.calculation = response;
-    }
-    );
+    this.calculate("sq");
   }
 
   fact(){
-    this.calculationService.getCalculation("fact", this.inputNumber).subscribe((response:number) => {
-      this.calculation = response;
-    }
-    );
+    this.calculate("fact");
   }
 
   fibbo(){
-    this.calculationService.getCalculation("fibbo", this.inputNumber).subscribe((response:number) => {
-      this.calculation = response;
-    }
-    );
+    this.calculate("fibbo");
   }
 
 
